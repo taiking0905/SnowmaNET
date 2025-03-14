@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 背景色変更 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="背景色の変更"
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/button_change_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="色を選ぶ"
+            android:backgroundTint="#0081BB"
+            android:backgroundTintMode="src_in"/>
+
+        <!-- 作成速度変更 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="雪だるまの作成速度"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <SeekBar
+            android:id="@+id/seekbar_growth_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:max="190"
+            android:progressBackgroundTint="#BB3A00"
+            android:progressTint="#0081BB"
+            android:thumbTint="#0081BB" />
+        <!-- 画像削除 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画像管理"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/button_delete_images"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="画像を削除"
+            android:backgroundTint="#0081BB"
+            android:backgroundTintMode="src_in"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="ClickBack"
+            android:text="戻る"
+            android:backgroundTint="#0081BB"
+            android:backgroundTintMode="src_in"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
