@@ -1,1 +1,8 @@
-/build
+# Android向けの.gitignoreの例
+*.iml
+.gradle
+/local.properties
+/.idea
+/captures
+/output.json
+/build/
